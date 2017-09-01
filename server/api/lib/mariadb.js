@@ -1,9 +1,9 @@
 var mysql = require('mysql');
 var pool=mysql.createPool({    
-    host: 'thzz882efnak0xod.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-    user: 'a30r1w8w1zzjklzs',
-    password: 'ysfd6hhsv564wk72',
-    database: 'p0uxhcx139xrqqt5'      
+    host: 'my-mariadb-host',
+    user: 'userid',
+    password: 'password',
+    database: 'databasename'      
 });
 
 pool.on('connection', function(connection) {
